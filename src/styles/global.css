@@ -2392,6 +2392,7 @@ ul.actions {
 ul.actions li {
   padding: 0 0 0 1em;
   vertical-align: middle;
+  list-style: none;
 }
 
 ul.actions.special {
@@ -3569,6 +3570,7 @@ body.is-preload #header.alt {
 #banner > .inner .content > * {
   margin-right: 1.5em;
   margin-bottom: 0;
+  color: #fff;
 }
 
 #banner > .inner .content > :last-child {

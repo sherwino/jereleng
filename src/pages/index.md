@@ -3,9 +3,9 @@ templateKey: index-page
 title: JER Engineering & Design
 image: /img/home-jumbotron.jpg
 heading: Detailed
-subheading: Get the right documents and designs for your team.
+subheading: Specializing in drafting technical shop drawings in South FL for Fabrication | Construction | Permitting | 2D or 3D Modeling.
 mainpitch:
-  title: 'Drafting, Shop Drawings, & 3D Design'
+  title: 'Let us design your next project'
   description: >
     Spicy jalapeno bacon ipsum dolor amet shoulder chicken pariatur corned beef
     ullamco, filet mignon kielbasa prosciutto ea magna sausage sed pancetta ham
