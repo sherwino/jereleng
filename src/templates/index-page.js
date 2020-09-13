@@ -2,15 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Features from "../components/Features"
-import ProjectList from "../components/ProjectList"
+import { Layout, Features, ProjectList } from "../components"
 
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
   subheading,
+  button,
   mainpitch,
   description,
   intro,
@@ -32,8 +31,8 @@ export const IndexPageTemplate = ({
                 <ul className="actions">
                   <li>
                     <a href="#one" className="button next scrolly">
-                      See my projects
-                  </a>
+                      {button}
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -359,6 +358,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  button: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -376,6 +376,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
+        button={frontmatter.button}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
@@ -408,6 +409,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        button
         mainpitch {
           title
           description

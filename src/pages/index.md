@@ -3,7 +3,8 @@ templateKey: index-page
 title: JER Engineering & Design
 image: /img/home-jumbotron.jpg
 heading: Detailed
-subheading: Specializing in drafting technical shop drawings in South FL for Fabrication | Construction | Permitting | 2D or 3D Modeling.
+subheading: Specializing in drafting technical shop drawings in South FL for Fabrication | Construction | Permitting | 3D Modeling.
+button: "See our recent projects"
 mainpitch:
   title: 'Let us design your next project'
   description: >

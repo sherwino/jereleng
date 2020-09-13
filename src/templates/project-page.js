@@ -6,7 +6,14 @@ import { kebabCase } from "lodash"
 import Layout from "../components/Layout"
 import Content, { HTMLContent } from "../components/Content"
 
-export const ProjectTemplate = ({ title, content, contentComponent }) => {
+export const ProjectTemplate = ({
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  helmet,
+}) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -18,6 +25,7 @@ export const ProjectTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              WHAT IS THIS
               <PageContent className="content" content={content} />
             </div>
           </div>
