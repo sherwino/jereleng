@@ -7,9 +7,13 @@ $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+$body-color: #eee
+$black: #fff
+$title-color: #fff
+$content-heading-color: #fff
 
+.container-increase
+  height: 3.5rem
 .navbar .navbar-menu
   box-shadow: none !important
 
@@ -80,8 +84,18 @@ $black: #2b2523
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-.navbar-brand .navbar-item.logo
-  padding: 0 1rem
+.logo-link.logo
+.logo-link, .logo-link:visited,
+  text-emphasis: none
+  text-decoration: none
+  outline-style: none
+  height: 100%
+  // -webkit-mask: url(../img/JER-Black.svg) no-repeat center
+  // mask: url(../img/JER-Black.svg) no-repeat center
+  // mask-size: contain
+.logo-link:hover
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1)
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent

@@ -25,7 +25,6 @@ export const ProjectTemplate = ({
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              WHAT IS THIS
               <PageContent className="content" content={content} />
             </div>
           </div>

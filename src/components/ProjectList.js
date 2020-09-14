@@ -7,16 +7,15 @@ class ProjectList extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    console.log("Project List", { data, posts })
     return (
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
               <article
-                className={`project-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? "is-featured" : ""
-                }`}
+                className={`project-list-item tile is-child box notification ${post.frontmatter.featuredpost ? "is-featured" : ""
+                  }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (

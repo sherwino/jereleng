@@ -1,7 +1,7 @@
-import React from "react"
+import * as React from "react"
 import { Link } from "gatsby"
 import github from "../img/github-icon.svg"
-import logo from "../img/logo.svg"
+import logo from "../img/JER-Black-180.png"
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -39,12 +39,12 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
+        <div className="container container-increase">
           {/* <!-- Header --> */}
           <header id="header" className="alt">
-            <a href="index.html" className="logo">
-              <strong>JER</strong> <span>Engineering & Design</span>
-            </a>
+            <Link to="/" className="logo-link" title="Logo">
+              <img className="logo" src={logo} alt="Kaldi" />
+            </Link>
             <div>
               {/* <a href="#menu">Menu</a> */}
             </div>
