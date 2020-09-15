@@ -1,11 +1,12 @@
 ---
-templateKey: project-page
-title: Marriott Hotel - Key Largo
+templateKey: "project-page"
+title: "Marriott Hotel - Key Largo"
 date: 2020-09-13T00:38:27.083Z
-description: This was a unique project that involved treating the metals with
-  special protective coatings due to the proximity to the ocean.
 featuredpost: true
 featuredimage: /img/rusty-fence.webp
+description: This was a unique project that involved treating the metals with
+  special protective coatings due to the proximity to the ocean.
+
 tags:
   - fence
   - design

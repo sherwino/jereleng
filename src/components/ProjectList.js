@@ -71,7 +71,7 @@ export default () => (
       query ProjectListQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "project" } } }
+          filter: { frontmatter: { templateKey: { eq: "project-page" } } }
         ) {
           edges {
             node {
@@ -85,13 +85,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+                
               }
             }
           }
