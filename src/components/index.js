@@ -2,6 +2,10 @@ import Layout from "./Layout"
 import Features from "./Features"
 import { IntroHeader } from "./IntroHeader"
 import { FeaturedProjects } from "./FeaturedProjects"
+import { Summary } from "./Summary"
+import { MainFooter } from "./MainFooter"
+
+
 
 import ProjectList from "./ProjectList"
 
@@ -10,5 +14,7 @@ export {
     Features,
     FeaturedProjects,
     IntroHeader,
-    ProjectList
+    MainFooter,
+    ProjectList,
+    Summary
 }
