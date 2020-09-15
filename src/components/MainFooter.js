@@ -7,7 +7,6 @@ export const MainFooter = () => {
       <div className="inner">
         <ul className="icons">
           <li>
-            POOOOOP
             <Link to="#" className="icon brands alt fa-twitter">
               <span className="label">Twitter</span>
             </Link>
