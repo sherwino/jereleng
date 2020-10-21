@@ -1,20 +1,17 @@
 ---
-templateKey: "project-page"
-title: "Marriott Hotel - Key Largo"
+templateKey: project-page
+title: The Wave On Bayshore
 date: 2020-09-13T00:38:27.083Z
+description: Upscale Condos with Unique and Beautiful Aesthetics
 featuredpost: true
-featuredimage: /img/rusty-fence.webp
-description: This was a unique project that involved treating the metals with
-  special protective coatings due to the proximity to the ocean.
-
+featuredimage: /img/e.jpg
 tags:
-  - fence
-  - design
+  - stairs
+  - railing
+  - penthouse
+  - mono-stringer
 ---
-![rusty fence](/img/rusty-fence.webp "Rusty fence at Marriott Key Largo")
+![e.jpg](/img/e.jpg "The Wave")
 
-We redesigned the fence line to use a combination of stainless steel posts and galvanized chain link so that the hotel could ensure the fence was there for years to come
-
-## What this means for you
-
-When we design products like this we cater them to your needs, whatever the condition.
+## Penthouse Stairs and Railings
+Engineered and manufactured in a way that it is strong, up to code but still visually appealing. Being at the top of a high-rise, the mono-rail stairs was prefabricated with an interlocking system to be able to transport easily.
