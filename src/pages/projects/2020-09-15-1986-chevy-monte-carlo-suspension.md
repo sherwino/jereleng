@@ -1,12 +1,10 @@
 ---
 templateKey: project
-title: 1986 Chevy Monte Carlo Suspension
+title: High End Custom Cabinetry
 date: 2020-09-15T05:41:41.259Z
-description: Customer wanted to overhaul his Chevy Monte Carlo, so we installed
-  some new shocks to stiffen up the ride and improve the handling of the classic
-  Chevy
+description: Luxurious cabinetry with a multitude of materials
 featuredpost: true
-featuredimage: /img/JER-Black-180.png
+featuredimage: /img/untitled.jpg
 tags:
   - project
   - auto
