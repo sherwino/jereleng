@@ -3,24 +3,18 @@ templateKey: index-page
 title: JER Engineering & Design
 image: /img/home-jumbotron.jpg
 heading: Detailed
-subheading: Specializing in drafting technical shop drawings in South FL for Fabrication | Construction | Permitting | 3D Modeling.
-button: "See some of our works"
+subheading: Specializing in drafting technical shop drawings in South FL for
+  Fabrication | Construction | Permitting | 3D Modeling.
 mainpitch:
-  title: 'Let us design your next project'
+  title: Let us design your next project
   description: >
     Spicy jalapeno bacon ipsum dolor amet shoulder chicken pariatur corned beef
     ullamco, filet mignon kielbasa prosciutto ea magna sausage sed pancetta ham
     hock nostrud. 
-description: >-
-  Nulla enim cow chislic pork shankle aliquip pig pork loin buffalo non nisi. Ad
-  nostrud duis consectetur non ex, cupim tongue. Id deserunt ad, in ham aliquip
-  ut tail. Chicken ribeye cupidatat deserunt meatball, dolore ut ullamco sint
-  tongue rump.
 intro:
   blurbs:
     - image: /img/jer-logos_black.png
-      text: >-
-        Shank nostrud ball tip bresaola. Dolor dolore mollit alcatra. Cupidatat
+      text: Shank nostrud ball tip bresaola. Dolor dolore mollit alcatra. Cupidatat
         pork belly turkey prosciutto picanha culpa. Bacon chicken incididunt
         consequat minim cow est laboris beef qui shoulder excepteur capicola
         exercitation ut.
@@ -31,12 +25,18 @@ intro:
         consequat minim cow est laboris beef qui shoulder excepteur capicola
         exercitation ut.
   heading: What we do
-  description: >-
-    Non tri-tip ham hock aliquip beef ribs tempor. Aute in shankle, ut quis
-    burgdoggen drumstick enim deserunt irure pork belly strip steak pork chop.
-    Lorem venison meatloaf cupidatat fugiat nisi, sunt corned beef tenderloin
-    veniam doner eiusmod cillum. Ullamco leberkas nulla ut. Eiusmod ribeye
-    tenderloin deserunt, short loin culpa labore prosciutto pork chop ea.
+  description: Non tri-tip ham hock aliquip beef ribs tempor. Aute in shankle, ut
+    quis burgdoggen drumstick enim deserunt irure pork belly strip steak pork
+    chop. Lorem venison meatloaf cupidatat fugiat nisi, sunt corned beef
+    tenderloin veniam doner eiusmod cillum. Ullamco leberkas nulla ut. Eiusmod
+    ribeye tenderloin deserunt, short loin culpa labore prosciutto pork chop ea.
+button: See some of our works
+description: Expert experience in manufacturing all types of Metal (aluminum,
+  Steel & SS Steel) structures and products. Able to make fully up to code shop
+  drawings and fabrication drawings. From concept to prototype all the way to
+  mass manufacturing, I have the know how to take anything from any stage to a
+  finished finalized product. Experienced, Creative and Knowledgeable. Give me a
+  chance to create what your imagination holds.
 main:
   heading: Great coffee with no compromises
   description: >
@@ -54,4 +54,3 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 ---
-
