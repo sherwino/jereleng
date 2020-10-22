@@ -29,7 +29,7 @@ import Content, { HTMLContent } from "../components/Content"
 //     <section className="section section--gradient">
 //       <div className="container">
 //         <div className="columns">
-//           <div className="column is-10 is-offset-1">
+//           <div className="column is-10">
 //             <div className="section">
 //               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
 //                 {title}
@@ -108,19 +108,28 @@ export const ProjectTemplate = ({
   tags,
   title,
   helmet,
+  excerpt,
+  image,
 }) => {
   const PostContent = contentComponent || Content
 
+  console.log("wino project template", { excerpt, content, image })
+
   return (
-    <section className="section">
+    <section style={{ height: "100vh" }} className="section">
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-5">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
+            <img style={{ maxHeight: "75vh" }} src={image} />
+          </div>
+          <div className="column is-6">
+            <div style={{ margin: "5rem 0" }}></div>
+            <b>{description}</b>
+            <p>{excerpt}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -147,10 +156,14 @@ ProjectTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  excerpt: PropTypes.string,
+  image: PropTypes.string,
 }
 
 const Project = ({ data }) => {
   const { markdownRemark: post } = data
+
+  console.log("wino markdown data", { post, data })
 
   return (
     <Layout>
@@ -169,6 +182,8 @@ const Project = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        excerpt={post.excerpt}
+        image={post.frontmatter.featuredimage.publicURL}
       />
     </Layout>
   )
@@ -192,7 +207,12 @@ export const pageQuery = graphql`
         title
         description
         tags
+        featuredimage {
+          publicURL
+        }
       }
+
+      excerpt(pruneLength: 1600)
     }
   }
 `
