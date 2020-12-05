@@ -1,25 +1,26 @@
 ---
-templateKey: "about-page"
+templateKey: about-page
 path: /about
-title: About our values
+title: About JER Engineering and Design
 ---
+![JER Engineering and Design's Full Size Logo sketched on a CAD Grid](/img/JER-1200.png "JER Engineering and Design Logo")
 
-### Shade-grown coffee
+### It All Started As A Way To Help The Community
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+After having several small businesses approach us to create technical documents it was obvious that there was a demand for our kind of work in South Florida. These businesses did not have anybody that could produce these documents affordably, so we offered to help.
 
-### Single origin
+### We Produce Documents For Several Industries
 
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+The JER Engineering and Design team has produced documents for businesses in several industries and will continue to provide our services to those in need. We first started producing 2D documents for MEP engineering & contracting firms. Then later expanded to 3D drawings for boat trailer manufacturing, and CNC shops that just needed documents to fabricate and feed to their machines. If you require any sort of CAD Drawings, Shop Drawings, Technical Documentation, and CAM drawings for your machines to turn into G-code send us a message, or give us a call.
 
-### Sustainable farming
+### No Job Is Too Small or Too Large for Our Team
 
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Over the years we have worked with a large variety of highly skilled people that give us the capability to scale as needed. Every job is different so we often assemble the team per the job requirements, we work with several PEs, draftsmen, and fabrication shops in the region. We built a network that could help us deliver all types of 2D and 3D drawings. We have projects that have ranged from simple as built drawing modifications to 3D manufacturing documents that detail every single rivet, nut, or bolt for the process.
 
-### Direct sourcing
+### A Company For The Makers
 
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+JER Engineering and Design is a company that enjoys working with makers. So if you are just looking to 3D print unique pieces for one off projects we could help you out. We also have worked with people who want to design a project to later take into crowdfunding and take their ideas to market. 
 
-### Reinvest profits
+### Easy To Reach
 
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our project.
+We never liked the mystery behind the process of seeking out an engineering company and not getting any updates or hearing anything from them until the project was done. So one of our main goals is to create a company that is more transparent, and easy to communicate with. This is why we created this site! Feel free to chat with us, send us an email, or give us a call.
