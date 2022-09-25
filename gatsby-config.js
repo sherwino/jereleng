@@ -1,92 +1,42 @@
-var proxy = require("http-proxy-middleware")
+// support for .env, .env.development, and .env.production
+require("dotenv").config()
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   siteMetadata: {
-    title: "JER Engineering & Design",
-    description:
-      "JER Drafting, Engineering, and Design. Produce quality shop and technical drawings for manufacturing, construction, and design",
+    siteUrl: "https://gatsbycontentfulhomepage.gatsbyjs.io/",
+    title: "Gatsby Contentful Homepage Starter",
+    author: `Gatsby`,
+    description: "A Gatsby Starter for building homepages with Contentful",
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
     {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
-      resolve: "gatsby-source-filesystem",
+      resolve: "gatsby-source-contentful",
       options: {
-        path: `${__dirname}/static/img`,
-        name: "uploads",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img`,
-        name: "images",
+        downloadLocal: true,
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        host: process.env.CONTENTFUL_HOST,
       },
     },
     "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-vanilla-extract",
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: "gatsby-plugin-manifest",
       options: {
-        plugins: [
-          {
-            resolve: "gatsby-remark-relative-images",
-            options: {
-              name: "uploads",
-            },
-          },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
-            },
-          },
-          {
-            resolve: "gatsby-remark-copy-linked-files",
-            options: {
-              destinationDir: "static",
-            },
-          },
-        ],
+        name: "Gatsby Starter Contentful Homepage",
+        short_name: "Gatsby",
+        start_url: "/",
+        // These can be imported once ESM support lands
+        background_color: "#ffe491",
+        theme_color: "#004ca3",
+        icon: "src/favicon.png",
       },
     },
-    {
-      resolve: "gatsby-plugin-netlify-cms",
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
-      options: {
-        develop: true, // Activates purging in npm run develop
-        purgeOnly: ["/all.sass"], // applies purging only on the bulma css file
-      },
-    }, // must be after other CSS plugins
-    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
-  // for avoiding CORS while developing Netlify Functions locally
-  // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
-  developMiddleware: app => {
-    app.use(
-      "/.netlify/functions/",
-      proxy({
-        target: "http://localhost:9000",
-        pathRewrite: {
-          "/.netlify/functions/": "",
-        },
-      })
-    )
-  },
 }
